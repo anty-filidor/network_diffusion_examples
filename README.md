@@ -11,3 +11,9 @@ Some examples for network_diffusion package
    - `five_processes_diffusion.py`,
    - `two_processes_diffusion.py`,
    - `three_processes_diffusion.py`,
+
+Please note that networks available in this directory have a source [here](//multilayer.it.uu.se/datasets.html).
+
+# Remarks
+This code is published under GNU General Public License v3 (see `LICENSE` file).
+Authors: Michał Czuba, Piotr Bródka
