@@ -6,7 +6,7 @@ from network_diffusion.propagation_model import PropagationModel
 
 # initialise multilayer network from mlx file
 network = MultilayerNetwork()
-network.load_mlx("test_data/aucs.mpx")
+network.load_mlx("aux/aucs.mpx")
 network.describe()
 
 # initialise propagation model and set possible transitions with probabilities

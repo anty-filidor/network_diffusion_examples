@@ -8,7 +8,7 @@ from network_diffusion import (
 
 # initialise graph
 network = MultilayerNetwork()
-network.load_mlx("test_data/florentine.mpx")
+network.load_mlx("aux/florentine.mpx")
 network.describe()
 
 # initialise propagation model
