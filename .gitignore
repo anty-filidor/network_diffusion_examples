@@ -1,0 +1,5 @@
+/.flake8
+/.pre-commit-config.yaml
+/venv/
+/.mypy_cache/
+/.idea/
