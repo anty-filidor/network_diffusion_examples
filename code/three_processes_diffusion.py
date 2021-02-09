@@ -1,5 +1,4 @@
 import networkx as nx
-
 from network_diffusion import (
     MultilayerNetwork,
     MultiSpreading,

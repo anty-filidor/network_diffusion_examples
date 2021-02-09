@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import networkx as nx
-
 from network_diffusion import FlatSpreading
 
 # initialise graph
@@ -22,5 +21,5 @@ plt.savefig("{}.png".format(par[0]), dpi=150)
 plt.show()
 
 # prepare animated visualisations of experiment
-FlatSpreading.visualise_si_nodes(M, nodes_infected, par, ".")
-FlatSpreading.visualise_si_nodes_edges(M, nodes_infected, par, ".")
+FlatSpreading.visualise_si_nodes(M, nodes_infected, par, "..")
+FlatSpreading.visualise_si_nodes_edges(M, nodes_infected, par, "..")
