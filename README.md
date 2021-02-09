@@ -15,7 +15,7 @@ Some examples for network_diffusion package
    - `innteractive_example.py`
 
 Please note that networks available in this directory have a source
-[here](//multilayer.it.uu.se/datasets.html).
+[here](http://multilayer.it.uu.se/datasets.html).
 
 # Remarks
 
