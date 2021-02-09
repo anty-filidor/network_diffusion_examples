@@ -33,5 +33,9 @@ plt.savefig("{}.png".format(par[0]), dpi=150)
 plt.show()
 
 # prepare animated visualisations of experiment
-fs.visualise_sir_nodes(M, nodes_infected, nodes_recovered, par, "..")
-fs.visualise_sir_nodes_edges(M, nodes_infected, nodes_recovered, par, "..")
+fs.visualise_sir_nodes(
+    M, nodes_infected, nodes_recovered, par, "/results"
+)
+fs.visualise_sir_nodes_edges(
+    M, nodes_infected, nodes_recovered, par, "/results"
+)

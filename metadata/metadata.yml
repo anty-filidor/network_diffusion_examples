@@ -1,13 +1,14 @@
 metadata_version: 1
-name: Untitled Capsule Feb 9, 2021 20:35
-description: klkjlkj
+name: Network Diffusion Examples
+description: I contain some examples of usage a Network Diffusion package!
 tags:
   - network-science
+  - network-diffusion
   - python
 authors:
   - name: Michał Czuba
     affiliations:
-      - name: Xd
+      - name: Wrocław University of Technology
   - name: Piotr Bródka
     affiliations:
       - name: Wrocław University of Technology

@@ -35,4 +35,4 @@ experiment.set_initial_states(phenomenas)
 logs = experiment.perform_propagation(n_epochs=200)
 
 # save experiment results
-logs.report(to_file=True, path=os.getcwd(), visualisation=True)
+logs.report(to_file=True, path="/results", visualisation=True)

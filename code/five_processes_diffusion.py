@@ -1,8 +1,8 @@
 from os import getcwd
 
-from network_diffusion.multi_spreading import MultiSpreading
-from network_diffusion.multilayer_network import MultilayerNetwork
-from network_diffusion.propagation_model import PropagationModel
+from network_diffusion import MultiSpreading
+from network_diffusion import MultilayerNetwork
+from network_diffusion import PropagationModel
 
 # initialise multilayer network from mlx file
 network = MultilayerNetwork()
@@ -39,4 +39,4 @@ phenomenas = {
 experiment = MultiSpreading(model, network)
 experiment.set_initial_states(phenomenas)
 logs = experiment.perform_propagation(200)
-logs.report(to_file=True, path=getcwd(), visualisation=True)
+logs.report(to_file=True, path="/results", visualisation=True)
