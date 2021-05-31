@@ -1,5 +1,4 @@
-from os import getcwd
-
+"""This example contains random calculation and is not reproducible."""
 from network_diffusion import MultiSpreading
 from network_diffusion import MultilayerNetwork
 from network_diffusion import PropagationModel

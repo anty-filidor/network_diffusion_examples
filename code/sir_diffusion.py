@@ -1,6 +1,8 @@
+"""This example contains random calculation and is not reproducible."""
 import matplotlib.pyplot as plt
-from network_diffusion import FlatSpreading as fs
 import networkx as nx
+
+from network_diffusion import FlatSpreading as fs
 
 # initialise graph
 M = nx.barabasi_albert_graph(200, 50)

@@ -1,5 +1,7 @@
+"""This example contains random calculation and is not reproducible."""
 import matplotlib.pyplot as plt
 import networkx as nx
+
 from network_diffusion import FlatSpreading
 
 # initialise graph

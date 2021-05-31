@@ -10,9 +10,9 @@ Some examples for network_diffusion package
    - `si_diffusion.py`,
    - `sir_diffusion.py`,
    - `five_processes_diffusion.py`,
-   - `two_processes_diffusion.py`,
-   - `three_processes_diffusion.py`,
-   - `innteractive_example.py`
+   - `two_processes_diffusion.py` (reproducible  - JSS requirements),
+   - `three_processes_diffusion.py` (reproducible  - JSS requirements),
+   - `innteractive_example.ipynb` (reproducible  - JSS requirements),
 
 Please note that networks available in this directory have a source
 [here](http://multilayer.it.uu.se/datasets.html).

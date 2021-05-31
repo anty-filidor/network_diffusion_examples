@@ -7,8 +7,8 @@ set -ex
 # Uncomment one of lines below to run certain script
 # python -u si_diffusion.py "$@"
 # python -u sir_diffusion.py "$@"
-# python -u two_processes_diffusion.py "$@"
+python -u two_processes_diffusion.py "$@"
 # python -u three_processes_diffusion.py "$@"
-python -u five_processes_diffusion.py "$@"
+# python -u five_processes_diffusion.py "$@"
 
 # To run interactive example select Jupyter in section "Reproducible Run"
