@@ -1,4 +1,5 @@
 """This example is reproducible due to the requirements of JSS."""
+import configparser
 from typing import Any
 
 import networkx as nx
@@ -19,6 +20,11 @@ def set_node_state(
     """Allows to set up the initial state of certain node."""
     experiment._network.layers[layer_name].nodes[node_name]["status"] = state
 
+
+# read global config
+config = configparser.ConfigParser()
+config.read("config.ini")
+output_dir = config.get("PATHS", "output_dir")
 
 # initialise propagation model
 M = PropagationModel()
@@ -91,4 +97,4 @@ set_node_state(experiment, "vacc", "Geborand", "v")
 set_node_state(experiment, "vacc", "Champtercier", "v")
 
 logs = experiment.perform_propagation(n_epochs=30)
-logs.report(to_file=True, path="/results", visualisation=True)
+logs.report(to_file=True, path=output_dir, visualisation=True)

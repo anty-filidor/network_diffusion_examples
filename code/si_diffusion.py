@@ -1,8 +1,15 @@
 """This example contains random calculation and is not reproducible."""
+import configparser
+
 import matplotlib.pyplot as plt
 import networkx as nx
 
 from network_diffusion import FlatSpreading
+
+# read global config
+config = configparser.ConfigParser()
+config.read("config.ini")
+output_dir = config.get("PATHS", "output_dir")
 
 # initialise graph
 M = nx.les_miserables_graph()
@@ -23,5 +30,5 @@ plt.savefig("{}.png".format(par[0]), dpi=150)
 plt.show()
 
 # prepare animated visualisations of experiment
-FlatSpreading.visualise_si_nodes(M, nodes_infected, par, "/results")
-FlatSpreading.visualise_si_nodes_edges(M, nodes_infected, par, "/results")
+FlatSpreading.visualise_si_nodes(M, nodes_infected, par, output_dir)
+FlatSpreading.visualise_si_nodes_edges(M, nodes_infected, par, output_dir)

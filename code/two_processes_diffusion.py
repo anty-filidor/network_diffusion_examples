@@ -1,4 +1,5 @@
 """This example is reproducible due to the requirements of JSS."""
+import configparser
 from typing import Any
 
 import numpy as np
@@ -17,6 +18,11 @@ def set_node_state(
     """Allows to set up the initial state of certain node."""
     experiment._network.layers[layer_name].nodes[node_name]["status"] = state
 
+
+# read global config
+config = configparser.ConfigParser()
+config.read("config.ini")
+output_dir = config.get("PATHS", "output_dir")
 
 # initialise graph
 network = MultilayerNetwork()
@@ -54,4 +60,4 @@ set_node_state(experiment, "business", "Lamberteschi", "V")
 logs = experiment.perform_propagation(n_epochs=200)
 
 # save experiment results
-logs.report(to_file=True, path="/results", visualisation=True)
+logs.report(to_file=True, path=output_dir, visualisation=True)
