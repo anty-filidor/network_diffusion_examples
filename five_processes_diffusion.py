@@ -1,7 +1,14 @@
 """This example contains random calculation and is not reproducible."""
+import configparser
+
 from network_diffusion import MultiSpreading
 from network_diffusion import MultilayerNetwork
 from network_diffusion import PropagationModel
+
+# read global config
+config = configparser.ConfigParser()
+config.read("config.ini")
+output_dir = config.get("PATHS", "output_dir")
 
 # initialise multilayer network from mlx file
 network = MultilayerNetwork()
@@ -38,4 +45,4 @@ phenomenas = {
 experiment = MultiSpreading(model, network)
 experiment.set_initial_states(phenomenas)
 logs = experiment.perform_propagation(200)
-logs.report(to_file=True, path="/results", visualisation=True)
+logs.report(to_file=True, path=output_dir, visualisation=True)
