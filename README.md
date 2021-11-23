@@ -16,7 +16,7 @@ Create new python environment using `requirements.txt` file:
 ```
 conda create --name nd_examples python=3.7
 conda acvivate nd_examples
-pip install -r requirements.txt
+pip install -r environment/requirements.txt
 ```
 Create new ipython kernel from environment created above:  
 ```
@@ -31,9 +31,9 @@ Run one of following files in order to see results of experiments:
   - `si_diffusion.py`,
   - `sir_diffusion.py`,
   - `five_processes_diffusion.py`,
-  - `two_processes_diffusion.py` (reproducible  - JSS requirements),
-  - `three_processes_diffusion.py` (reproducible  - JSS requirements),
-  - `innteractive_example.ipynb` (reproducible  - JSS requirements),
+  - `two_processes_diffusion.py` (reproducible run),
+  - `three_processes_diffusion.py` (reproducible run),
+  - `innteractive_example.ipynb` (reproducible run),
 
 ## Remarks
 
