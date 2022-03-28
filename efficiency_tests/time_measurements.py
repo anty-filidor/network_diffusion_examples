@@ -17,7 +17,7 @@ class DataSample:
 def measure_time_single_run(function: Callable, input_data: Any) -> float:
     """Call 'function' with param 'input_list' and computes execution time."""
     start = time.time()
-    function(input_data)
+    function(*input_data)
     end = time.time()
     return (end - start) * 1000  # mili seconds
 
