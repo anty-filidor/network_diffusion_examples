@@ -1,4 +1,4 @@
-"""This example is reproducible due to the requirements of JSS."""
+"""This example is reproducible."""
 import configparser
 from typing import Any
 

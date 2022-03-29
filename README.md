@@ -28,12 +28,9 @@ the accessible directory.
 
 ### Step 2.
 Run one of following files in order to see results of experiments:
-  - `si_diffusion.py`,
-  - `sir_diffusion.py`,
-  - `five_processes_diffusion.py`,
-  - `two_processes_diffusion.py` (reproducible run),
-  - `three_processes_diffusion.py` (reproducible run),
-  - `innteractive_example.ipynb` (reproducible run),
+  - `elections.py` (reproducible run),
+  - `epidemic.py` (reproducible run),
+  - `gossip.ipynb` (reproducible run),
 
 ## Remarks
 
