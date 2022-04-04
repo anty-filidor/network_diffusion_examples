@@ -15,7 +15,7 @@ Navigate to this [page](https://codeocean.com/capsule/8807709)
 Create new python environment using `requirements.txt` file:  
 ```
 conda create --name nd_examples python=3.7
-conda acvivate nd_examples
+conda activate nd_examples
 pip install -r requirements.txt
 ```
 Create new ipython kernel from environment created above:  
