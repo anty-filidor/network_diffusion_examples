@@ -26,7 +26,7 @@ output_dir = config.get("PATHS", "output_dir")
 
 # initialise graph
 network = MultilayerNetwork()
-network.load_mlx("aux/florentine.mpx")
+network.load_mlx("auxiliaries/florentine.mpx")
 network.describe()
 
 # initialise propagation model
