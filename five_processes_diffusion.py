@@ -12,7 +12,7 @@ output_dir = config.get("PATHS", "output_dir")
 
 # initialise multilayer network from mlx file
 network = MultilayerNetwork()
-network.load_mlx("aux/aucs.mpx")
+network.load_mlx("auxiliaries/aucs.mpx")
 network.describe()
 
 # initialise propagation model and set possible transitions with probabilities
