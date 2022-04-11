@@ -1,6 +1,6 @@
 # Network diffusion examples
 
-Some examples for network_diffusion package
+Chosen examples for network_diffusion package
 
 ## How to use
 
@@ -28,12 +28,14 @@ the accessible directory.
 
 ### Step 2.
 Run one of following files in order to see results of experiments:
-  - `si_diffusion.py`,
-  - `sir_diffusion.py`,
-  - `five_processes_diffusion.py`,
-  - `two_processes_diffusion.py` (reproducible run),
-  - `three_processes_diffusion.py` (reproducible run),
-  - `innteractive_example.ipynb` (reproducible run),
+  - `epidemic.py` (example of epidemic propagation with auxiliary processes:
+    vaccinations and awareness),
+  - `market_competition.ipynb` (marketing campaign of two competitive products
+    ),
+  - `gossip.ipynb` (example of gossip spreading on two different social 
+    networks),
+  - `efficiency_tests/tests.ipynb` (comparison of the network_diffusion 
+    time-efficiency)
 
 ## Remarks
 

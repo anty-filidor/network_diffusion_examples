@@ -4,7 +4,6 @@ from typing import Any
 
 import networkx as nx
 import numpy as np
-
 np.random.seed(0)  # fix all seeds of the numpy which is used in the library
 
 from network_diffusion import (
