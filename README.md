@@ -38,7 +38,6 @@ Run one of following files in order to see results of experiments:
     time-efficiency)
 
 ## Remarks
->>>>>>> master
 
 Please note that networks available in this directory have a source
 [here](http://multilayer.it.uu.se/datasets.html).
